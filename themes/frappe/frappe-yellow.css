@@ -1,4 +1,4 @@
-/* Catppuccin Frappé for Zettlr
+/* Catppuccin Frappé Yellow for Zettlr
  * Generated from the official Catppuccin palette.
  * Install by copying this file into Zettlr's custom.css slot.
  */
@@ -19,7 +19,7 @@ body.dark {
   --ctp-subtext0: #a5adce;
   --ctp-subtext1: #b5bfe2;
   --ctp-text: #c6d0f5;
-  --ctp-accent: #ca9ee6;
+  --ctp-accent: #e5c890;
   --ctp-link: #8caaee;
   --ctp-success: #a6d189;
   --ctp-warning: #e5c890;
@@ -39,9 +39,9 @@ body.dark {
   --ctp-subtle: #838ba7;
   --ctp-selection: rgba(148, 156, 187, 0.24);
   --ctp-search: rgba(229, 200, 144, 0.22);
-  --ctp-highlight: rgba(229, 200, 144, 0.3);
+  --ctp-highlight: rgba(229, 200, 144, 0.30);
   --ctp-shadow: rgba(35, 38, 52, 0.45);
-  --system-accent-color: #ca9ee6;
+  --system-accent-color: #e5c890;
   --system-accent-color-contrast: #303446;
 }
 
@@ -1005,4 +1005,3 @@ body #sidebar-tab-container::-webkit-scrollbar-thumb:hover,
 body #component-container::-webkit-scrollbar-thumb:hover {
   background-color: var(--ctp-surface2);
 }
-

@@ -1,4 +1,4 @@
-/* Catppuccin Latte for Zettlr
+/* Catppuccin Latte Sapphire for Zettlr
  * Generated from the official Catppuccin palette.
  * Install by copying this file into Zettlr's custom.css slot.
  */
@@ -19,7 +19,7 @@ body.dark {
   --ctp-subtext0: #6c6f85;
   --ctp-subtext1: #5c5f77;
   --ctp-text: #4c4f69;
-  --ctp-accent: #8839ef;
+  --ctp-accent: #209fb5;
   --ctp-link: #1e66f5;
   --ctp-success: #40a02b;
   --ctp-warning: #df8e1d;
@@ -39,9 +39,9 @@ body.dark {
   --ctp-subtle: #8c8fa1;
   --ctp-selection: rgba(124, 127, 147, 0.24);
   --ctp-search: rgba(223, 142, 29, 0.22);
-  --ctp-highlight: rgba(223, 142, 29, 0.3);
-  --ctp-shadow: rgba(220, 224, 232, 0.2);
-  --system-accent-color: #8839ef;
+  --ctp-highlight: rgba(223, 142, 29, 0.30);
+  --ctp-shadow: rgba(220, 224, 232, 0.45);
+  --system-accent-color: #209fb5;
   --system-accent-color-contrast: #eff1f5;
 }
 
@@ -1005,4 +1005,3 @@ body #sidebar-tab-container::-webkit-scrollbar-thumb:hover,
 body #component-container::-webkit-scrollbar-thumb:hover {
   background-color: var(--ctp-surface2);
 }
-

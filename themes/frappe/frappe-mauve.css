@@ -1,4 +1,4 @@
-/* Catppuccin Macchiato for Zettlr
+/* Catppuccin Frappé Mauve for Zettlr
  * Generated from the official Catppuccin palette.
  * Install by copying this file into Zettlr's custom.css slot.
  */
@@ -6,43 +6,43 @@
 body,
 body.dark {
   color-scheme: dark;
-  --ctp-flavor: "Macchiato";
-  --ctp-base: #24273a;
-  --ctp-mantle: #1e2030;
-  --ctp-crust: #181926;
-  --ctp-surface0: #363a4f;
-  --ctp-surface1: #494d64;
-  --ctp-surface2: #5b6078;
-  --ctp-overlay0: #6e738d;
-  --ctp-overlay1: #8087a2;
-  --ctp-overlay2: #939ab7;
-  --ctp-subtext0: #a5adcb;
-  --ctp-subtext1: #b8c0e0;
-  --ctp-text: #cad3f5;
-  --ctp-accent: #c6a0f6;
-  --ctp-link: #8aadf4;
-  --ctp-success: #a6da95;
-  --ctp-warning: #eed49f;
-  --ctp-danger: #ed8796;
-  --ctp-cursor: #f4dbd6;
-  --ctp-heading: #b7bdf8;
-  --ctp-quote: #a5adcb;
-  --ctp-tag: #8aadf4;
-  --ctp-number: #f5a97f;
-  --ctp-string: #a6da95;
-  --ctp-keyword: #c6a0f6;
-  --ctp-property: #8bd5ca;
-  --ctp-type: #eed49f;
-  --ctp-class-name: #eed49f;
-  --ctp-tag-name: #f5a97f;
-  --ctp-markup: #8087a2;
-  --ctp-subtle: #8087a2;
-  --ctp-selection: rgba(147, 154, 183, 0.24);
-  --ctp-search: rgba(238, 212, 159, 0.22);
-  --ctp-highlight: rgba(238, 212, 159, 0.3);
-  --ctp-shadow: rgba(24, 25, 38, 0.45);
-  --system-accent-color: #c6a0f6;
-  --system-accent-color-contrast: #24273a;
+  --ctp-flavor: "Frappé";
+  --ctp-base: #303446;
+  --ctp-mantle: #292c3c;
+  --ctp-crust: #232634;
+  --ctp-surface0: #414559;
+  --ctp-surface1: #51576d;
+  --ctp-surface2: #626880;
+  --ctp-overlay0: #737994;
+  --ctp-overlay1: #838ba7;
+  --ctp-overlay2: #949cbb;
+  --ctp-subtext0: #a5adce;
+  --ctp-subtext1: #b5bfe2;
+  --ctp-text: #c6d0f5;
+  --ctp-accent: #ca9ee6;
+  --ctp-link: #8caaee;
+  --ctp-success: #a6d189;
+  --ctp-warning: #e5c890;
+  --ctp-danger: #e78284;
+  --ctp-cursor: #f2d5cf;
+  --ctp-heading: #babbf1;
+  --ctp-quote: #a5adce;
+  --ctp-tag: #8caaee;
+  --ctp-number: #ef9f76;
+  --ctp-string: #a6d189;
+  --ctp-keyword: #ca9ee6;
+  --ctp-property: #81c8be;
+  --ctp-type: #e5c890;
+  --ctp-class-name: #e5c890;
+  --ctp-tag-name: #ef9f76;
+  --ctp-markup: #838ba7;
+  --ctp-subtle: #838ba7;
+  --ctp-selection: rgba(148, 156, 187, 0.24);
+  --ctp-search: rgba(229, 200, 144, 0.22);
+  --ctp-highlight: rgba(229, 200, 144, 0.30);
+  --ctp-shadow: rgba(35, 38, 52, 0.45);
+  --system-accent-color: #ca9ee6;
+  --system-accent-color-contrast: #303446;
 }
 
 /* catppuccin-zettlr: shared rules */
@@ -1005,4 +1005,3 @@ body #sidebar-tab-container::-webkit-scrollbar-thumb:hover,
 body #component-container::-webkit-scrollbar-thumb:hover {
   background-color: var(--ctp-surface2);
 }
-
