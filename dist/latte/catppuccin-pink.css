@@ -1,0 +1,1047 @@
+/* Catppuccin Pink for Zettlr
+ * Auto variant: Latte in light mode, Latte in dark mode.
+ * Generated from the official Catppuccin palette.
+ */
+
+body {
+  color-scheme: light;
+  --ctp-flavor: "Latte";
+  --ctp-base: #eff1f5;
+  --ctp-mantle: #e6e9ef;
+  --ctp-crust: #dce0e8;
+  --ctp-surface0: #ccd0da;
+  --ctp-surface1: #bcc0cc;
+  --ctp-surface2: #acb0be;
+  --ctp-overlay0: #9ca0b0;
+  --ctp-overlay1: #8c8fa1;
+  --ctp-overlay2: #7c7f93;
+  --ctp-subtext0: #6c6f85;
+  --ctp-subtext1: #5c5f77;
+  --ctp-text: #4c4f69;
+  --ctp-accent: #ea76cb;
+  --ctp-link: #1e66f5;
+  --ctp-success: #40a02b;
+  --ctp-warning: #df8e1d;
+  --ctp-danger: #d20f39;
+  --ctp-cursor: #dc8a78;
+  --ctp-heading: #7287fd;
+  --ctp-quote: #6c6f85;
+  --ctp-tag: #1e66f5;
+  --ctp-number: #fe640b;
+  --ctp-string: #40a02b;
+  --ctp-keyword: #8839ef;
+  --ctp-property: #179299;
+  --ctp-type: #df8e1d;
+  --ctp-class-name: #df8e1d;
+  --ctp-tag-name: #fe640b;
+  --ctp-markup: #8c8fa1;
+  --ctp-subtle: #8c8fa1;
+  --ctp-selection: rgba(124, 127, 147, 0.24);
+  --ctp-search: rgba(223, 142, 29, 0.22);
+  --ctp-highlight: rgba(223, 142, 29, 0.30);
+  --ctp-shadow: rgba(220, 224, 232, 0.20);
+  --system-accent-color: #ea76cb;
+  --system-accent-color-contrast: #eff1f5;
+}
+
+body.dark {
+  color-scheme: dark;
+  --ctp-flavor: "Latte";
+  --ctp-base: #eff1f5;
+  --ctp-mantle: #e6e9ef;
+  --ctp-crust: #dce0e8;
+  --ctp-surface0: #ccd0da;
+  --ctp-surface1: #bcc0cc;
+  --ctp-surface2: #acb0be;
+  --ctp-overlay0: #9ca0b0;
+  --ctp-overlay1: #8c8fa1;
+  --ctp-overlay2: #7c7f93;
+  --ctp-subtext0: #6c6f85;
+  --ctp-subtext1: #5c5f77;
+  --ctp-text: #4c4f69;
+  --ctp-accent: #ea76cb;
+  --ctp-link: #1e66f5;
+  --ctp-success: #40a02b;
+  --ctp-warning: #df8e1d;
+  --ctp-danger: #d20f39;
+  --ctp-cursor: #dc8a78;
+  --ctp-heading: #7287fd;
+  --ctp-quote: #6c6f85;
+  --ctp-tag: #1e66f5;
+  --ctp-number: #fe640b;
+  --ctp-string: #40a02b;
+  --ctp-keyword: #8839ef;
+  --ctp-property: #179299;
+  --ctp-type: #df8e1d;
+  --ctp-class-name: #df8e1d;
+  --ctp-tag-name: #fe640b;
+  --ctp-markup: #8c8fa1;
+  --ctp-subtle: #8c8fa1;
+  --ctp-selection: rgba(124, 127, 147, 0.24);
+  --ctp-search: rgba(223, 142, 29, 0.22);
+  --ctp-highlight: rgba(223, 142, 29, 0.30);
+  --ctp-shadow: rgba(220, 224, 232, 0.45);
+  --system-accent-color: #ea76cb;
+  --system-accent-color-contrast: #eff1f5;
+}
+
+/* catppuccin-zettlr: shared rules */
+body,
+body.dark {
+  accent-color: var(--ctp-accent);
+  background-color: var(--ctp-base);
+  color: var(--ctp-text);
+}
+
+body,
+body.dark,
+body #window-frame,
+body #app,
+body #window-content,
+body div#window-content.disable-vibrancy,
+body .main-editor-wrapper,
+body .code-editor-wrapper,
+body .main-editor-wrapper .cm-editor,
+body .code-editor-wrapper .cm-editor,
+body .main-editor-wrapper .cm-scroller,
+body .code-editor-wrapper .cm-scroller,
+body .main-editor-wrapper .cm-content {
+  background-color: var(--ctp-base) !important;
+  color: var(--ctp-text);
+}
+
+body .code-editor-wrapper .cm-content,
+body div[role="tabpanel"],
+body #preferences-container-list,
+body .form-container,
+body .form-container fieldset,
+body .control-grid,
+body .popover,
+body .popover form,
+body .popover table,
+body #no-results-message {
+  background-color: var(--ctp-base) !important;
+  color: var(--ctp-text);
+}
+
+body a,
+body.dark a {
+  color: var(--ctp-link);
+}
+
+body #window-chrome,
+body #toolbar,
+body #statusbar,
+body .document-tablist-wrapper .scroller,
+body .tab-container,
+body .tab-list,
+body .system-tablist,
+body #file-manager,
+body #sidebar,
+body .cm-statusbar,
+body .cm-panels,
+body .cm-panel,
+body .cm-tooltip,
+body .tippy-box,
+body .tippy-content,
+body .popover,
+body .toolbar-search-container {
+  background-color: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
+}
+
+body #window-content,
+body #statusbar,
+body #toolbar,
+body #file-manager,
+body #sidebar,
+body .tab-container,
+body .tab-list,
+body .system-tablist,
+body .cm-statusbar,
+body .cm-panel,
+body .cm-tooltip,
+body .tippy-box,
+body .popover,
+body .toolbar-search-container,
+body div.split-view div.view.view-border,
+body.darwin #file-manager,
+body.dark.darwin #file-manager {
+  border-color: var(--ctp-surface1) !important;
+}
+
+body #preferences-container-list,
+body .form-container fieldset,
+body .control-grid .control-grid-cell,
+body .popover,
+body .popover-arrow,
+body .toolbar-search-container {
+  box-shadow: none !important;
+}
+
+body .form-container .fieldset-category,
+body .form-field-info-text,
+body .form-control p.info,
+body .cb-group div.info,
+body .radio-group-outside-label,
+body .toolbar-search::placeholder,
+body .popover a.toc-link,
+body .popover form label,
+body .popover table td {
+  color: var(--ctp-subtext0) !important;
+}
+
+body .form-container fieldset,
+body .control-grid .control-grid-cell,
+body .popover,
+body .popover form input,
+body .toolbar-search-container {
+  background-color: var(--ctp-surface0) !important;
+  border: 1px solid var(--ctp-surface1) !important;
+}
+
+body .form-container fieldset legend,
+body .form-container .control-grid .control-grid-cell.heading,
+body .form-container .form-header,
+body .form-container label,
+body .popover,
+body .popover a.toc-link:hover {
+  color: var(--ctp-text) !important;
+}
+
+body .form-container fieldset hr,
+body .popover hr {
+  border-color: var(--ctp-surface1) !important;
+}
+
+body .form-container .form-help {
+  background-color: var(--ctp-surface1) !important;
+  border: 1px solid var(--ctp-surface2) !important;
+  color: var(--ctp-subtext1) !important;
+}
+
+body .toolbar-search-container cds-icon,
+body .toolbar-search-container clr-icon,
+body .toolbar-search::placeholder {
+  color: var(--ctp-overlay1) !important;
+}
+
+body input,
+body textarea,
+body select,
+body button {
+  color: var(--ctp-text);
+}
+
+body input,
+body textarea,
+body select,
+body .file-manager-filter-input,
+body .filename-input,
+body .cm-panels input,
+body .cm-panels button,
+body .cm-button,
+body .tippy-content textarea,
+body .toolbar-search,
+body .popover form input,
+body select option {
+  background-color: var(--ctp-surface0) !important;
+  border: 1px solid var(--ctp-surface1) !important;
+  color: var(--ctp-text) !important;
+  box-shadow: none !important;
+}
+
+body input::placeholder,
+body textarea::placeholder,
+body .file-manager-filter-input::placeholder,
+body .filename-input::placeholder {
+  color: var(--ctp-overlay1) !important;
+}
+
+body input:focus,
+body textarea:focus,
+body select:focus,
+body .file-manager-filter-input:focus,
+body .filename-input:focus,
+body .cm-panels input:focus {
+  border-color: var(--ctp-accent) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 1px var(--ctp-accent) !important;
+}
+
+body .toolbar-search-container:focus-within,
+body .popover form input:focus {
+  border-color: var(--ctp-accent) !important;
+  box-shadow: 0 0 0 1px var(--ctp-accent) !important;
+}
+
+body button:disabled,
+body input:disabled,
+body textarea:disabled,
+body select:disabled,
+body label.disabled,
+body .cb-group div.info,
+body .form-control p.info,
+body .radio-group-outside-label {
+  color: var(--ctp-overlay1) !important;
+}
+
+body button:disabled,
+body input:disabled,
+body textarea:disabled,
+body select:disabled {
+  background-color: var(--ctp-surface0) !important;
+  border-color: var(--ctp-surface1) !important;
+  cursor: not-allowed !important;
+  opacity: 1 !important;
+}
+
+body .form-control button,
+body .save-asset-file button {
+  background-color: var(--ctp-surface0) !important;
+  border: 1px solid var(--ctp-surface1) !important;
+  color: var(--ctp-text) !important;
+  box-shadow: none !important;
+}
+
+body .form-control button:hover:not(:disabled),
+body .save-asset-file button:hover:not(:disabled) {
+  background-color: var(--ctp-surface1) !important;
+}
+
+body .form-control button.primary,
+body .save-asset-file button.primary {
+  background-color: var(--ctp-accent) !important;
+  border-color: var(--ctp-accent) !important;
+  color: var(--ctp-base) !important;
+}
+
+body .form-control button.primary:hover:not(:disabled),
+body .save-asset-file button.primary:hover:not(:disabled) {
+  filter: brightness(1.04);
+}
+
+body div.form-control .input-text-button-group {
+  background-color: var(--ctp-surface0) !important;
+  border: 1px solid var(--ctp-surface1) !important;
+  color: var(--ctp-text) !important;
+}
+
+body div.form-control .input-text-button-group:focus-within {
+  border-color: var(--ctp-accent) !important;
+  box-shadow: 0 0 0 1px var(--ctp-accent) !important;
+  outline: none !important;
+}
+
+body div.form-control .input-text-button-group .input-text-button-group-icon {
+  color: var(--ctp-overlay1) !important;
+}
+
+body div.form-control .input-text-button-group button.input-reset-button {
+  background-color: var(--ctp-surface1) !important;
+  color: var(--ctp-subtext1) !important;
+}
+
+body div.form-control .input-text-button-group button.input-reset-button:hover {
+  background-color: var(--ctp-overlay0) !important;
+  color: var(--ctp-text) !important;
+}
+
+body label.checkbox .checkmark {
+  background-color: var(--ctp-surface0) !important;
+  border: 1px solid var(--ctp-surface1) !important;
+}
+
+body label.checkbox .checkmark::after {
+  border-color: var(--ctp-base) !important;
+}
+
+body label.checkbox input:checked ~ .checkmark {
+  background-color: var(--ctp-accent) !important;
+  border-color: var(--ctp-accent) !important;
+  background-image: none !important;
+}
+
+body label.checkbox.disabled .checkmark,
+body label.checkbox.disabled input:checked ~ .checkmark {
+  background-color: var(--ctp-surface1) !important;
+  border-color: var(--ctp-overlay0) !important;
+}
+
+body label.checkbox.disabled .checkmark::after {
+  border-color: var(--ctp-overlay1) !important;
+}
+
+body label.radio .toggle {
+  background: var(--ctp-surface0) !important;
+  border: 1px solid var(--ctp-surface1) !important;
+  box-shadow: none !important;
+}
+
+body label.radio .toggle::before {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+body label.radio input:checked + .toggle {
+  background: var(--ctp-accent) !important;
+  border-color: var(--ctp-accent) !important;
+  background-image: none !important;
+}
+
+body label.radio input:checked + .toggle::before {
+  background-color: var(--ctp-base) !important;
+}
+
+body label.radio.disabled .toggle,
+body label.radio.disabled input:checked + .toggle {
+  background: var(--ctp-surface1) !important;
+  border-color: var(--ctp-overlay0) !important;
+}
+
+body label.radio.disabled input:checked + .toggle::before {
+  background-color: var(--ctp-overlay1) !important;
+}
+
+body div.switch-group label.switch {
+  background-color: var(--ctp-surface1) !important;
+}
+
+body div.switch-group label.switch .toggle {
+  background-color: var(--ctp-surface0) !important;
+  box-shadow: none !important;
+}
+
+body div.switch-group label.switch .toggle::before {
+  background-color: var(--ctp-base) !important;
+  box-shadow: none !important;
+}
+
+body div.switch-group label.switch input:checked + .toggle {
+  background-color: var(--ctp-accent) !important;
+}
+
+body .selectable-list-wrapper {
+  --selectable-list-border-color: var(--ctp-surface1) !important;
+  --muted-color: var(--ctp-overlay1) !important;
+}
+
+body .selectable-list-wrapper .selectable-list-footer,
+body .selectable-list-wrapper .selectable-list-container {
+  background-color: var(--ctp-mantle) !important;
+  border-color: var(--ctp-surface1) !important;
+}
+
+body .selectable-list-wrapper .selectable-list-footer .add,
+body .selectable-list-wrapper .selectable-list-footer .remove {
+  color: var(--ctp-subtext1) !important;
+  border-right-color: var(--ctp-surface1) !important;
+}
+
+body .selectable-list-wrapper .selectable-list-footer .add:hover,
+body .selectable-list-wrapper .selectable-list-footer .remove:hover {
+  background-color: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+}
+
+body .selectable-list-wrapper .selectable-list-container div.no-items-label {
+  color: var(--ctp-overlay1) !important;
+}
+
+body .selectable-list-wrapper .selectable-list-container div.item {
+  background-color: var(--ctp-base) !important;
+  color: var(--ctp-text) !important;
+  border-color: var(--ctp-surface1) !important;
+}
+
+body .selectable-list-wrapper .selectable-list-container div.item:hover {
+  background-color: var(--ctp-surface0) !important;
+}
+
+body .selectable-list-wrapper .selectable-list-container div.item.selected {
+  background-color: var(--ctp-accent) !important;
+  color: var(--ctp-base) !important;
+}
+
+body .selectable-list-wrapper .selectable-list-container div.item .info-string {
+  color: var(--ctp-overlay1) !important;
+}
+
+body .selectable-list-wrapper .selectable-list-container div.item .info-string.error {
+  color: var(--ctp-danger) !important;
+}
+
+body .admonition,
+body .asset-admonition {
+  background-color: var(--ctp-surface0) !important;
+  border-color: var(--ctp-surface1) !important;
+  color: var(--ctp-text) !important;
+}
+
+body .admonition cds-icon,
+body .asset-admonition cds-icon {
+  color: inherit !important;
+}
+
+body .admonition.warning,
+body .asset-admonition.warning {
+  background-color: color-mix(in srgb, var(--ctp-warning) 16%, var(--ctp-base)) !important;
+  border-color: color-mix(in srgb, var(--ctp-warning) 42%, var(--ctp-surface1)) !important;
+  color: color-mix(in srgb, var(--ctp-warning) 72%, var(--ctp-text)) !important;
+}
+
+body .admonition.info,
+body .asset-admonition.info {
+  background-color: color-mix(in srgb, var(--ctp-link) 16%, var(--ctp-base)) !important;
+  border-color: color-mix(in srgb, var(--ctp-link) 42%, var(--ctp-surface1)) !important;
+  color: color-mix(in srgb, var(--ctp-link) 72%, var(--ctp-text)) !important;
+}
+
+body .admonition.error,
+body .asset-admonition.error {
+  background-color: color-mix(in srgb, var(--ctp-danger) 16%, var(--ctp-base)) !important;
+  border-color: color-mix(in srgb, var(--ctp-danger) 42%, var(--ctp-surface1)) !important;
+  color: color-mix(in srgb, var(--ctp-danger) 72%, var(--ctp-text)) !important;
+}
+
+body #toolbar,
+body #toolbar button,
+body #toolbar .toolbar-text,
+body #toolbar .toolbar-label,
+body #toolbar cds-icon,
+body .document-tablist-wrapper .scroller,
+body .system-tab,
+body .tab-list button[role="tab"] {
+  color: var(--ctp-subtext1) !important;
+}
+
+body #toolbar button,
+body #toolbar .toolbar-text,
+body .toolbar-group button,
+body .toolbar-overflow,
+body .system-tab,
+body .tab-list button[role="tab"] {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+body #toolbar button:hover,
+body #toolbar .toolbar-text:hover,
+body #toolbar .toolbar-overflow:hover,
+body .system-tab:hover,
+body .tab-list button[role="tab"]:hover,
+body .tab-list button[role="tab"].active,
+body .system-tab.active,
+body .toolbar-group button.active,
+body .toolbar-group .active button,
+body .toolbar-group .toggle.active,
+body .toolbar-group .three-way-toggle.active,
+body .toolbar-group .three-way-toggle button.active {
+  background-color: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+}
+
+body #toolbar button.active,
+body .toolbar-group button.active,
+body .toolbar-group .active button,
+body .toolbar-group .toggle.active,
+body .toolbar-group .three-way-toggle.active,
+body .toolbar-group .three-way-toggle button.active {
+  background-color: var(--ctp-surface1) !important;
+}
+
+body #statusbar button.primary,
+body .tab-list button[role="tab"].active,
+body .system-tab.active,
+body .toc-entry-active {
+  color: var(--ctp-base) !important;
+}
+
+body #statusbar button.primary {
+  background-color: var(--ctp-accent) !important;
+  border-color: var(--ctp-accent) !important;
+}
+
+body div.document-tablist-wrapper div.scroller {
+  background-color: var(--ctp-crust) !important;
+}
+
+body div.document-tablist-wrapper div.scroller:hover {
+  background-color: var(--ctp-surface0) !important;
+}
+
+body .tab-container {
+  background-color: var(--ctp-mantle) !important;
+  border-bottom: 1px solid var(--ctp-surface1) !important;
+}
+
+body .tab-container div[role="tab"] {
+  background-color: transparent !important;
+  border-color: var(--ctp-surface1) !important;
+  color: var(--ctp-subtext1) !important;
+  box-shadow: none !important;
+}
+
+body .tab-container div[role="tab"]:hover {
+  background-color: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+}
+
+body .tab-container div[role="tab"].active {
+  background-color: var(--ctp-surface0) !important;
+  border-bottom: 2px solid var(--ctp-accent) !important;
+  color: var(--ctp-text) !important;
+}
+
+body .tab-container div[role="tab"].modified .filename::before {
+  color: var(--ctp-number) !important;
+}
+
+body .tab-container div[role="tab"] .close:hover {
+  background-color: var(--ctp-surface1) !important;
+  color: var(--ctp-danger) !important;
+}
+
+body #file-manager {
+  background-color: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
+}
+
+body #file-manager .file-manager-filter {
+  background-color: var(--ctp-mantle) !important;
+}
+
+body #file-manager #arrow-button {
+  background-color: var(--ctp-surface1) !important;
+  box-shadow: none !important;
+  color: var(--ctp-text) !important;
+}
+
+body .tree-item,
+body .list-item,
+body .empty-file-list,
+body .empty-directory {
+  color: var(--ctp-subtext1) !important;
+}
+
+body .tree-item:hover,
+body .list-item:hover,
+body .related-file:hover,
+body .toc-entry-container:hover,
+body .search-result:hover {
+  background-color: var(--ctp-surface0) !important;
+}
+
+body .tree-item.selected,
+body .list-item.selected,
+body .system-tab.active,
+body .tab-list button[role="tab"].active {
+  background-color: var(--ctp-surface1) !important;
+  color: var(--ctp-text) !important;
+}
+
+body .tree-item.active,
+body .list-item.active,
+body .toc-entry-active,
+body .search-result.active,
+body #global-search .active {
+  background-color: var(--ctp-accent) !important;
+  color: var(--ctp-base) !important;
+}
+
+body .tree-item.directory,
+body .list-item.directory,
+body .csl-bib-body a,
+body #sidebar a,
+body .toc-level {
+  color: var(--ctp-link) !important;
+}
+
+body .tree-item .item-icon,
+body .tree-item .toggle-icon,
+body .deduplicate,
+body .filename .date,
+body .toolbar-label,
+body .toolbar-text,
+body .cm-gutters,
+body .cm-citation-mark,
+body .cm-citation-at-sign,
+body .cm-code-mark,
+body .cm-zkn-link-mark,
+body .cm-zkn-link-pipe,
+body .cm-zkn-tag-mark,
+body .pandoc-attribute-mark,
+body .cm-pandoc-div-mark,
+body .cm-pandoc-div-info,
+body .cm-pandoc-span-mark,
+body .cm-formatting-code,
+body .cm-formatting-code-block,
+body .cm-formatting-quote,
+body .cm-formatting-strong,
+body .cm-formatting-em,
+body .cm-zkn-link-formatting,
+body .cm-escape-char {
+  color: var(--ctp-markup) !important;
+}
+
+body .list-item .badge,
+body .meta-info .badge,
+body .cm-foldPlaceholder {
+  background-color: var(--ctp-surface0) !important;
+  border-color: var(--ctp-surface1) !important;
+  color: var(--ctp-subtext0) !important;
+}
+
+body .list-item .badge.code-indicator,
+body .meta-info .badge.code-indicator {
+  background-color: var(--ctp-accent) !important;
+  color: var(--ctp-base) !important;
+}
+
+body .list-item .badge.tag,
+body .meta-info .badge.tag {
+  background-color: var(--ctp-tag) !important;
+  color: var(--ctp-base) !important;
+}
+
+body .meta-info .badge svg circle {
+  fill: var(--ctp-surface1) !important;
+}
+
+body .meta-info .badge svg path {
+  fill: var(--ctp-subtext0) !important;
+}
+
+body #sidebar {
+  background-color: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
+}
+
+body #sidebar #sidebar-tab-container {
+  background-color: var(--ctp-mantle) !important;
+}
+
+body #sidebar .toc-level {
+  color: var(--ctp-accent) !important;
+}
+
+body #sidebar .toc-entry,
+body #sidebar .related-file,
+body #sidebar .csl-entry,
+body h2.other-files-panel-folder-name {
+  color: var(--ctp-text) !important;
+}
+
+body #sidebar .toc-entry-active,
+body #sidebar .toc-entry-active .toc-level {
+  color: var(--ctp-base) !important;
+}
+
+body div.split-view div.view.view-border {
+  border-left-color: var(--ctp-surface1) !important;
+}
+
+body div.split-view div.horizontal-resizer {
+  background-image: linear-gradient(
+    to right,
+    transparent 0,
+    transparent 45%,
+    var(--ctp-surface1) 45%,
+    var(--ctp-surface1) 55%,
+    transparent 55%,
+    transparent 100%
+  );
+}
+
+body div.split-view div.horizontal-resizer:hover {
+  background-image: linear-gradient(
+    to right,
+    transparent 0,
+    transparent 45%,
+    var(--ctp-accent) 45%,
+    var(--ctp-accent) 55%,
+    transparent 55%,
+    transparent 100%
+  );
+}
+
+body .main-editor-wrapper,
+body .code-editor-wrapper,
+body .main-editor-wrapper .cm-editor,
+body .code-editor-wrapper .cm-editor,
+body .main-editor-wrapper .cm-scroller,
+body .code-editor-wrapper .cm-scroller,
+body .main-editor-wrapper .cm-content,
+body .code-editor-wrapper .cm-content,
+body .main-editor-wrapper .cm-line {
+  color: var(--ctp-text) !important;
+}
+
+body .main-editor-wrapper .cm-line,
+body .code-editor-wrapper .cm-line {
+  background-color: transparent !important;
+}
+
+body .main-editor-wrapper .cm-gutters,
+body .code-editor-wrapper .cm-gutters {
+  background-color: var(--ctp-mantle) !important;
+  border-right-color: var(--ctp-surface1) !important;
+  color: var(--ctp-overlay2) !important;
+}
+
+body .main-editor-wrapper .cm-activeLine,
+body .main-editor-wrapper .cm-activeLineGutter,
+body .main-editor-wrapper .typewriter-active-line,
+body .code-editor-wrapper .cm-activeLine,
+body .code-editor-wrapper .cm-activeLineGutter,
+body .code-editor-wrapper .typewriter-active-line {
+  background-color: var(--ctp-surface0) !important;
+}
+
+body .main-editor-wrapper .cm-cursor,
+body .main-editor-wrapper .cm-dropCursor,
+body .code-editor-wrapper .cm-cursor,
+body .code-editor-wrapper .cm-dropCursor {
+  border-left-color: var(--ctp-cursor) !important;
+  background-color: var(--ctp-cursor) !important;
+}
+
+body .main-editor-wrapper .cm-selectionLayer .cm-selectionBackground,
+body .main-editor-wrapper.cm-focused .cm-selectionBackground,
+body .main-editor-wrapper .cm-content ::selection,
+body .main-editor-wrapper ::selection,
+body .code-editor-wrapper .cm-selectionLayer .cm-selectionBackground,
+body .code-editor-wrapper.cm-focused .cm-selectionBackground,
+body .code-editor-wrapper .cm-content ::selection,
+body .code-editor-wrapper ::selection {
+  background-color: var(--ctp-selection) !important;
+}
+
+body .main-editor-wrapper .cm-selectionMatch,
+body .main-editor-wrapper .cm-searchMatch,
+body .code-editor-wrapper .cm-selectionMatch,
+body .code-editor-wrapper .cm-searchMatch {
+  background-color: var(--ctp-search) !important;
+  border: 1px solid var(--ctp-warning) !important;
+}
+
+body .cm-tooltip,
+body .cm-panels,
+body .cm-panel,
+body .tippy-box {
+  border: 1px solid var(--ctp-surface1) !important;
+  box-shadow: 0 16px 40px var(--ctp-shadow) !important;
+}
+
+body .cm-tooltip-autocomplete ul li[aria-selected],
+body .cm-panel.cm-panel-lint ul [aria-selected],
+body .cm-completionMatchedText {
+  background-color: var(--ctp-surface1) !important;
+  color: var(--ctp-text) !important;
+}
+
+body .cm-completionInfo,
+body .cm-completionLabel {
+  color: var(--ctp-text) !important;
+}
+
+body .cm-statusbar {
+  border-top: 1px solid var(--ctp-surface1) !important;
+  color: var(--ctp-subtext0) !important;
+}
+
+body .cm-yaml-frontmatter-start::after {
+  background-color: var(--ctp-surface1) !important;
+  color: var(--ctp-subtext0) !important;
+}
+
+body .citeproc-citation:not(.error),
+body .code-block-line-background,
+body .inline-code-background {
+  background-color: var(--ctp-surface0) !important;
+}
+
+body .blockquote-wrapper {
+  border-left-color: var(--ctp-link) !important;
+}
+
+body .cm-comment,
+body .cm-line-comment,
+body .cm-block-comment,
+body .cm-doc-comment,
+body .cm-meta,
+body .cm-escape,
+body .cm-annotation {
+  color: var(--ctp-subtle) !important;
+}
+
+body .cm-keyword,
+body .cm-operator-keyword,
+body .cm-control-keyword,
+body .cm-definition-keyword,
+body .cm-module-keyword,
+body .cm-modifier,
+body .cm-self {
+  color: var(--ctp-keyword) !important;
+}
+
+body .cm-string,
+body .cm-doc-string,
+body .cm-attribute-value,
+body .cm-monospace {
+  color: var(--ctp-string) !important;
+}
+
+body .cm-number,
+body .cm-integer,
+body .cm-float,
+body .cm-unit,
+body .cm-literal {
+  color: var(--ctp-number) !important;
+}
+
+body .cm-bool,
+body .cm-atom,
+body .cm-null,
+body .cm-invalid,
+body .citeproc-citation.error,
+body .mermaid-chart.error {
+  color: var(--ctp-danger) !important;
+}
+
+body .cm-property-name,
+body .cm-label-name,
+body .cm-namespace {
+  color: var(--ctp-property) !important;
+}
+
+body .cm-type-name,
+body .cm-class-name {
+  color: var(--ctp-type) !important;
+}
+
+body .cm-tag-name {
+  color: var(--ctp-tag-name) !important;
+}
+
+body .cm-attribute-name {
+  color: var(--ctp-property) !important;
+}
+
+body .cm-variable-name,
+body .cm-name,
+body .cm-content-span,
+body .cm-fenced-code {
+  color: var(--ctp-text) !important;
+}
+
+body .cm-operator,
+body .cm-deref-operator,
+body .cm-arithmetic-operator,
+body .cm-logic-operator,
+body .cm-bitwise-operator,
+body .cm-compare-operator,
+body .cm-update-operator,
+body .cm-definition-operator,
+body .cm-type-operator,
+body .cm-control-operator,
+body .cm-punctuation,
+body .cm-separator,
+body .cm-bracket,
+body .cm-angle-bracket,
+body .cm-square-bracket,
+body .cm-paren,
+body .cm-brace {
+  color: var(--ctp-overlay2) !important;
+}
+
+body .cm-link,
+body .cm-url,
+body .cm-zkn-link,
+body .cm-zkn-link-title,
+body .cm-zkn-tag,
+body .cm-citation-citekey {
+  color: var(--ctp-link) !important;
+}
+
+body .cm-citation-locator {
+  color: var(--ctp-property) !important;
+}
+
+body .cm-citation-suppress-author-flag,
+body .cm-deleted {
+  color: var(--ctp-danger) !important;
+}
+
+body .cm-inserted {
+  color: var(--ctp-success) !important;
+}
+
+body .cm-changed,
+body .cm-highlight {
+  color: var(--ctp-text) !important;
+  background-color: var(--ctp-highlight) !important;
+}
+
+body .cm-quote,
+body .cm-citation-prefix,
+body .cm-citation-suffix,
+body .footnote,
+body .footnote-ref,
+body .footnote-ref-label {
+  color: var(--ctp-quote) !important;
+}
+
+body .cm-heading,
+body .cm-header-1,
+body .cm-header-2,
+body .cm-header-3,
+body .cm-header-4,
+body .cm-header-5,
+body .cm-header-6,
+body .cm-hr,
+body .cm-yaml-frontmatter-start,
+body .cm-yaml-frontmatter-end {
+  color: var(--ctp-heading) !important;
+}
+
+body .search-result-highlight {
+  background-color: var(--ctp-highlight) !important;
+  color: var(--ctp-text) !important;
+}
+
+body::-webkit-scrollbar,
+body .view::-webkit-scrollbar,
+body .cm-scroller::-webkit-scrollbar,
+body #sidebar-tab-container::-webkit-scrollbar,
+body #component-container::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+body::-webkit-scrollbar-track,
+body .view::-webkit-scrollbar-track,
+body .cm-scroller::-webkit-scrollbar-track,
+body #sidebar-tab-container::-webkit-scrollbar-track,
+body #component-container::-webkit-scrollbar-track {
+  background-color: var(--ctp-crust);
+}
+
+body::-webkit-scrollbar-thumb,
+body .view::-webkit-scrollbar-thumb,
+body .cm-scroller::-webkit-scrollbar-thumb,
+body #sidebar-tab-container::-webkit-scrollbar-thumb,
+body #component-container::-webkit-scrollbar-thumb {
+  background-color: var(--ctp-surface1);
+  border: 2px solid var(--ctp-crust);
+  border-radius: 999px;
+}
+
+body::-webkit-scrollbar-thumb:hover,
+body .view::-webkit-scrollbar-thumb:hover,
+body .cm-scroller::-webkit-scrollbar-thumb:hover,
+body #sidebar-tab-container::-webkit-scrollbar-thumb:hover,
+body #component-container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--ctp-surface2);
+}
