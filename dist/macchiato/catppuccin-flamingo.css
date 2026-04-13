@@ -1,100 +1,88 @@
----
-whiskers:
-  version: "^2.9.0"
-  matrix:
-    - flavor
-    - accent
-  filename: "dist/{{ flavor.identifier }}/catppuccin-{{ accent }}.css"
-  hex_format: "#{{r}}{{g}}{{b}}{{z}}"
----
-{%- set light = flavors.latte.colors -%}
-{%- set lightAccent = light[accent] -%}
-{%- set accent = flavor.colors[accent] -%}
-/* Catppuccin {{ accent.name }} for Zettlr
- * Auto variant: Latte in light mode, {{ flavor.name }} in dark mode.
+/* Catppuccin Flamingo for Zettlr
+ * Auto variant: Latte in light mode, Macchiato in dark mode.
  * Generated from the official Catppuccin palette.
  */
 
 body {
   color-scheme: light;
-  --ctp-flavor: "{{ flavors.latte.name }}";
-  --ctp-base: {{ light.base.hex }};
-  --ctp-mantle: {{ light.mantle.hex }};
-  --ctp-crust: {{ light.crust.hex }};
-  --ctp-surface0: {{ light.surface0.hex }};
-  --ctp-surface1: {{ light.surface1.hex }};
-  --ctp-surface2: {{ light.surface2.hex }};
-  --ctp-overlay0: {{ light.overlay0.hex }};
-  --ctp-overlay1: {{ light.overlay1.hex }};
-  --ctp-overlay2: {{ light.overlay2.hex }};
-  --ctp-subtext0: {{ light.subtext0.hex }};
-  --ctp-subtext1: {{ light.subtext1.hex }};
-  --ctp-text: {{ light.text.hex }};
-  --ctp-accent: {{ lightAccent.hex }};
-  --ctp-link: {{ light.blue.hex }};
-  --ctp-success: {{ light.green.hex }};
-  --ctp-warning: {{ light.yellow.hex }};
-  --ctp-danger: {{ light.red.hex }};
-  --ctp-cursor: {{ light.rosewater.hex }};
-  --ctp-heading: {{ light.lavender.hex }};
-  --ctp-quote: {{ light.subtext0.hex }};
-  --ctp-tag: {{ light.blue.hex }};
-  --ctp-number: {{ light.peach.hex }};
-  --ctp-string: {{ light.green.hex }};
-  --ctp-keyword: {{ light.mauve.hex }};
-  --ctp-property: {{ light.teal.hex }};
-  --ctp-type: {{ light.yellow.hex }};
-  --ctp-class-name: {{ light.yellow.hex }};
-  --ctp-tag-name: {{ light.peach.hex }};
-  --ctp-markup: {{ light.overlay1.hex }};
-  --ctp-subtle: {{ light.overlay1.hex }};
-  --ctp-selection: {{ css_rgba(color=light.overlay2 | mod(opacity=0.24)) }};
-  --ctp-search: {{ css_rgba(color=light.yellow | mod(opacity=0.22)) }};
-  --ctp-highlight: {{ css_rgba(color=light.yellow | mod(opacity=0.3)) }};
-  --ctp-shadow: {{ css_rgba(color=light.crust | mod(opacity=0.2)) }};
-  --system-accent-color: {{ lightAccent.hex }};
-  --system-accent-color-contrast: {{ light.base.hex }};
+  --ctp-flavor: "Latte";
+  --ctp-base: #eff1f5;
+  --ctp-mantle: #e6e9ef;
+  --ctp-crust: #dce0e8;
+  --ctp-surface0: #ccd0da;
+  --ctp-surface1: #bcc0cc;
+  --ctp-surface2: #acb0be;
+  --ctp-overlay0: #9ca0b0;
+  --ctp-overlay1: #8c8fa1;
+  --ctp-overlay2: #7c7f93;
+  --ctp-subtext0: #6c6f85;
+  --ctp-subtext1: #5c5f77;
+  --ctp-text: #4c4f69;
+  --ctp-accent: #dd7878;
+  --ctp-link: #1e66f5;
+  --ctp-success: #40a02b;
+  --ctp-warning: #df8e1d;
+  --ctp-danger: #d20f39;
+  --ctp-cursor: #dc8a78;
+  --ctp-heading: #7287fd;
+  --ctp-quote: #6c6f85;
+  --ctp-tag: #1e66f5;
+  --ctp-number: #fe640b;
+  --ctp-string: #40a02b;
+  --ctp-keyword: #8839ef;
+  --ctp-property: #179299;
+  --ctp-type: #df8e1d;
+  --ctp-class-name: #df8e1d;
+  --ctp-tag-name: #fe640b;
+  --ctp-markup: #8c8fa1;
+  --ctp-subtle: #8c8fa1;
+  --ctp-selection: rgba(124, 127, 147, 0.24);
+  --ctp-search: rgba(223, 142, 29, 0.22);
+  --ctp-highlight: rgba(223, 142, 29, 0.30);
+  --ctp-shadow: rgba(220, 224, 232, 0.20);
+  --system-accent-color: #dd7878;
+  --system-accent-color-contrast: #eff1f5;
 }
 
 body.dark {
   color-scheme: dark;
-  --ctp-flavor: "{{ flavor.name }}";
-  --ctp-base: {{ base.hex }};
-  --ctp-mantle: {{ mantle.hex }};
-  --ctp-crust: {{ crust.hex }};
-  --ctp-surface0: {{ surface0.hex }};
-  --ctp-surface1: {{ surface1.hex }};
-  --ctp-surface2: {{ surface2.hex }};
-  --ctp-overlay0: {{ overlay0.hex }};
-  --ctp-overlay1: {{ overlay1.hex }};
-  --ctp-overlay2: {{ overlay2.hex }};
-  --ctp-subtext0: {{ subtext0.hex }};
-  --ctp-subtext1: {{ subtext1.hex }};
-  --ctp-text: {{ text.hex }};
-  --ctp-accent: {{ accent.hex }};
-  --ctp-link: {{ blue.hex }};
-  --ctp-success: {{ green.hex }};
-  --ctp-warning: {{ yellow.hex }};
-  --ctp-danger: {{ red.hex }};
-  --ctp-cursor: {{ rosewater.hex }};
-  --ctp-heading: {{ lavender.hex }};
-  --ctp-quote: {{ subtext0.hex }};
-  --ctp-tag: {{ blue.hex }};
-  --ctp-number: {{ peach.hex }};
-  --ctp-string: {{ green.hex }};
-  --ctp-keyword: {{ mauve.hex }};
-  --ctp-property: {{ teal.hex }};
-  --ctp-type: {{ yellow.hex }};
-  --ctp-class-name: {{ yellow.hex }};
-  --ctp-tag-name: {{ peach.hex }};
-  --ctp-markup: {{ overlay1.hex }};
-  --ctp-subtle: {{ overlay1.hex }};
-  --ctp-selection: {{ css_rgba(color=overlay2 | mod(opacity=0.24)) }};
-  --ctp-search: {{ css_rgba(color=yellow | mod(opacity=0.22)) }};
-  --ctp-highlight: {{ css_rgba(color=yellow | mod(opacity=0.3)) }};
-  --ctp-shadow: {{ css_rgba(color=crust | mod(opacity=0.45)) }};
-  --system-accent-color: {{ accent.hex }};
-  --system-accent-color-contrast: {{ base.hex }};
+  --ctp-flavor: "Macchiato";
+  --ctp-base: #24273a;
+  --ctp-mantle: #1e2030;
+  --ctp-crust: #181926;
+  --ctp-surface0: #363a4f;
+  --ctp-surface1: #494d64;
+  --ctp-surface2: #5b6078;
+  --ctp-overlay0: #6e738d;
+  --ctp-overlay1: #8087a2;
+  --ctp-overlay2: #939ab7;
+  --ctp-subtext0: #a5adcb;
+  --ctp-subtext1: #b8c0e0;
+  --ctp-text: #cad3f5;
+  --ctp-accent: #f0c6c6;
+  --ctp-link: #8aadf4;
+  --ctp-success: #a6da95;
+  --ctp-warning: #eed49f;
+  --ctp-danger: #ed8796;
+  --ctp-cursor: #f4dbd6;
+  --ctp-heading: #b7bdf8;
+  --ctp-quote: #a5adcb;
+  --ctp-tag: #8aadf4;
+  --ctp-number: #f5a97f;
+  --ctp-string: #a6da95;
+  --ctp-keyword: #c6a0f6;
+  --ctp-property: #8bd5ca;
+  --ctp-type: #eed49f;
+  --ctp-class-name: #eed49f;
+  --ctp-tag-name: #f5a97f;
+  --ctp-markup: #8087a2;
+  --ctp-subtle: #8087a2;
+  --ctp-selection: rgba(147, 154, 183, 0.24);
+  --ctp-search: rgba(238, 212, 159, 0.22);
+  --ctp-highlight: rgba(238, 212, 159, 0.30);
+  --ctp-shadow: rgba(24, 25, 38, 0.45);
+  --system-accent-color: #f0c6c6;
+  --system-accent-color-contrast: #24273a;
 }
 
 /* catppuccin-zettlr: shared rules */
